@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>私の初めてのWebページ</title>
+    <title>ログインページ</title>
 
     <style>
         body {
@@ -20,10 +20,22 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 8px 0;
+        .form-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .form-row label {
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .form-row input {
+            width: 200px;
+            padding: 8px;
         }
 
         button {
@@ -32,6 +44,7 @@
             color: white;
             border: none;
             cursor: pointer;
+            margin-top: 15px;
         }
 
         button:hover {
@@ -47,29 +60,15 @@
     <h1>こんにちは、世界！</h1>
     <p>これは私の最初のHTMLページです。</p>
 
-    <ul style="text-align:left;">
-        <li>HTMLは簡単！</li>
-        <li>楽しい！</li>
-        <li>すぐに覚えられる！</li>
-    </ul>
-
-    <p>ユーザー名：</p>
-    <input type="text" placeholder="ユーザー名を入力">
-
-    <p>パスワード：</p>
-    <input type="password" placeholder="パスワードを入力">
-
-    <br><br>
-
-    <button onclick="alert('ログインしました！')">ログイン</button>
-
-    <br><br>
-
-    <div>
-        ここはdivタグで囲まれたセクションです。
+    <div class="form-row">
+        <label>ユーザー名：</label>
+        <input type="text" placeholder="ユーザー名">
     </div>
 
-</div>
+    <div class="form-row">
+        <label>パスワード：</label>
+        <input type="password" placeholder="パスワード">
+    </div>
 
-</body>
+    <button onclick="location.href='nextdy>
 </html>
